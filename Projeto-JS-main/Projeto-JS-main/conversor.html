@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Gabriela Padilha Calhau, Giovanni Marcon, Mahorni Maia  -->
+
+<head>
+    <!--▲▼▲▼▲▼▲▼ Icone site ▲▼▲▼▲▼▲▼-->
+    <link rel="shortcut icon" href="img/gmg-mini-logo.png" type="image/x-icon" />
+
+    <!-- ▲▼▲▼▲▼▲▼ Meta tags ▲▼▲▼▲▼▲▼ -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="Author" content="Gabriela Padilha Calhau, Giovanni Marcon, Mahorni Maia">
+    <meta content="GMG Soluções - Soluções digitais personalizadas." name="description">
+    <meta name="keywords" content="GMG, GMG soluções digitais, layout, sites, sistemas web, soluções web, Web Design">
+
+    <title>GMG - Conversor de Moedas</title>
+
+    <!-- ▲▼▲▼▲▼▲▼ CSS ▲▼▲▼▲▼▲▼ -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/sanitize-full.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/conversor.css'>
+
+    <!-- ▲▼▲▼▲▼▲▼ Link Fonts Awesome ▲▼▲▼▲▼▲▼ -->
+    <script src="https://kit.fontawesome.com/5cf15c459a.js" crossorigin="anonymous"></script>
+
+    <!-- ▲▼▲▼▲▼▲▼ Scripts ▲▼▲▼▲▼▲▼ -->
+    <script src="js/conversor.js"></script>
+    <script src="js/coresefonte.js"></script>
+
+</head>
+
+<body id="body" class="cores-noite">
+    <div id="tamanho-fonte" class="fonte-normal">
+        <header>
+            <div id="header-conteudo">
+                <a href="index.html"><img src="img/gmg-logo.png" alt="Logo marca GMG"></a>
+                <div>
+                    <i onclick="trocarTema()" class="fas fa-adjust"></i>
+                    <i onclick="trocarFonte()" class="fas fa-text-height"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="fundo-titulo">
+                <div id="meio-titulo">
+                    <h1>Conversão de moedas</h1>
+                    <P>Com o nosso conversor de moedas exclusivo, você pode converter moedas de maneira fácil e rápida.
+                    </P>
+                </div>
+            </div>
+            <div id="grande">
+
+                <div id=campos-moedas>
+                    <div id="aqui">
+                        <div id="esquerda">
+                            <b><label id="primeiraopção">Converter de: </label></b><br />
+                            <select id="opcao1">
+                                <option>Selecione uma opção</option>
+                                <option value="5.584">Dólar Americano</option>
+                                <option value="4.496">Dólar Canadense</option>
+                                <option value="4.352">Dólar Australiano</option>
+                                <option value="1">Real</option>
+                                <option value="6.733">Euro</option>
+                                <option value="7.854">Libra</option>
+                                <option value="0.0607">Peso Argentino</option>
+                            </select><br />
+                        </div>
+                    </div>
+                    <div id="direita">
+                        <b><label id="segundaooção">Converter para: </label></b><br />
+                        <select id="opcao2">
+                            <option>Selecione uma opção</option>
+                            <option value="0.17908309">Dólar Americano</option>
+                            <option value="0.22241992">Dólar Canadense</option>
+                            <option value="0.22977941">Dólar Australiano</option>
+                            <option value="1">Real</option>
+                            <option value="0.14852220">Euro</option>
+                            <option value="0.12732365">Libra</option>
+                            <option value="16.47446457">Peso Argentino</option>
+                        </select><br />
+                    </div>
+
+                    <div id="val">
+                        <div id="h3">
+                            <h3>Valor a ser convertido:</h3>
+                        </div>
+                        <div id="barra">
+                            <!-- Só permite entrada de numeros de 1 a 9, do . e da , -->
+                            <input id="input" type="number" min="0" step="1"
+                                onkeypress="return event.charCode >= 44 && event.charCode != 45 && event.charCode != 47 && event.charCode <= 57"
+                                placeholder="Digite um valor $">
+                        </div>
+                    </div>
+                </div>
+                <div id="campos-resultado">
+                    <div id="div4">
+                        <p id="resultado"><strong>Resultado:</strong></p>
+                        <input id="barraresultado" readonly>
+                    </div>
+
+                    <div id="botao">
+                        <input type="button" value="Converter" id="btn1" onclick="converter()" />
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <small>GMG Soluções Digitais© - 2021</small>
+        </footer>
+    </div>
+
+</body>
+
+</html>

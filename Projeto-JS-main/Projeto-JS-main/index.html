@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Gabriela Padilha Calhau, Giovanni Marcon, Mahorni Maia  -->
+
+<head>
+    <!--▲▼▲▼▲▼▲▼ Icone site ▲▼▲▼▲▼▲▼-->
+    <link rel="shortcut icon" href="img/gmg-mini-logo.png" type="image/x-icon" />
+
+    <!-- ▲▼▲▼▲▼▲▼ Meta tags ▲▼▲▼▲▼▲▼ -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="Author" content="Gabriela Padilha Calhau, Giovanni Marcon, Mahorni Maia">
+    <meta content="GMG Soluções - Soluções digitais personalizadas." name="description">
+    <meta name="keywords" content="GMG, GMG soluções digitais, layout, sites, sistemas web, soluções web, Web Design">
+
+    <title>GMG - Soluções Digitais</title>
+
+    <!-- ▲▼▲▼▲▼▲▼ CSS ▲▼▲▼▲▼▲▼ -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/sanitize-full.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+
+    <!-- ▲▼▲▼▲▼▲▼ Link Fonts Awesome ▲▼▲▼▲▼▲▼ -->
+    <script src="https://kit.fontawesome.com/5cf15c459a.js" crossorigin="anonymous"></script>
+
+    <!-- ▲▼▲▼▲▼▲▼ Scripts ▲▼▲▼▲▼▲▼ -->
+    <script src="js/index.js"></script>
+    <script src="js/coresefonte.js"></script>
+
+</head>
+
+<body id="body" class="cores-noite">
+    <div id="tamanho-fonte" class="fonte-normal">
+        <header>
+            <div id="header-conteudo">
+                <img src="img/gmg-logo.png" alt="Logo marca GMG">
+                <div>
+                    <i onclick="trocarTema()" class="fas fa-adjust"></i>
+                    <i onclick="trocarFonte()" class="fas fa-text-height"></i>
+                </div>
+            </div>
+            <div id="links-float"><a href="#header-conteudo"><i class="fas fa-arrow-circle-up"></i></a></div>
+        </header>
+        <main>
+            <div id="quem-somos-fundo">
+                <div id="quem-somos">
+                    <h1>Soluções digitais personalizadas para
+                        sua empresa.</h1>
+                    <p>Negócios, tecnologia e design lado a lado.</p>
+                </div>
+            </div>
+            <div id="contato-fundo">
+                <div id="contato">
+                    <h2>Uma empresa digital</h2>
+                    <p>Somos uma empresa que já nasceu na cultura digital e que cria soluções a partir de uma
+                        metodologia que combina intensa análise do negócio, design de experiência com o usuário e
+                        implantação de tecnologias.</p>
+                    <p>Cadastre seu email para mais informações ou conheça abaixo algumas de nossas soluções já
+                        desenvolvidas.</p>
+
+                    <div id="contato-email">
+                        <input type="email" name="email" id="email" placeholder="E-mail" onblur="validacaoEmail()"
+                            oninput="this.value=this.value.toLowerCase()">
+                        <button onclick="cadastrarEmail()">Cadastrar</button>
+                    </div>
+                </div>
+            </div>
+            <div id="calculadora-fundo">
+                <div class="projetos" id="calculadora">
+                    <div class="projetos-img"></div>
+                    <div class="projetos-texto">
+                        <h3>Calculadora</h3>
+                        <p>A calculadora é um dispositivo para a realização de cálculos numéricos e as antigas
+                            calculadoras mecânicas são consideradas por alguns como os primeiros computadores.</p>
+                        <p>Neste projeto desenvolvemos dois modelos totalmente funcionais de calculadoras. </p>
+                        <a href="calculadora.html">Calculadora</a>
+                    </div>
+                </div>
+            </div>
+            <div id="cadastro-fundo">
+                <div class="projetos" id="cadastro">
+                    <div class="projetos-texto">
+                        <h3>Formulario de Cadastro</h3>
+                        <p>Exemplo de uma página completa com entrada das informações mais importantes para o seu banco
+                            de dados como nome completo, CPF, dada de nascimento, sexo e idade. </p>
+                        <p>Campos de validação com alerta visual para que informações imprecisas não sejam aceitas até
+                            que a devida correção seja realizada.
+                        </p>
+                        <a href=" formulario.html">Formulário</a>
+                    </div>
+                    <div class="projetos-img"></div>
+                </div>
+            </div>
+            <div id="conversor-fundo">
+                <div class="projetos" id="conversor">
+                    <div class="projetos-img"></div>
+                    <div class="projetos-texto">
+                        <h3>Conversor de Moedas</h3>
+                        <p>Não perca mais tempo pesquisando o valor do dólar e outras moedas. Confira as cotações das
+                            principais moedas do mundo com nosso conversor de moedas de forma rápida e prática.
+                        </p>
+                        <p>Com menus dropdowns, uma interface intuitiva e consistente. Coverta moedas de maneira fácil e
+                            rápida.</p>
+                        <a href=" conversor.html">Conversor</a>
+                    </div>
+                </div>
+            </div>
+            <div id="equipe-fundo">
+                <div id="equipe">
+                    <div class="equipe-cartao" id="equipe1">
+                        <h4>Gabriela Calhau</h4>
+                        <img src="img/img-gabi.jpg" alt="Foto da Gabi">
+                        <p>Sempre correndo atrás do seus sonhos, Gabi cheia de responsabilidades com uma vida agitada e
+                            corrida do jeito que ela gosta. Ama ficar com a família e amigos. No momento o maior
+                            objetivo dela é crescer profissionalmente e se destacar no mercado de trabalho.</p>
+                    </div>
+                    <div class="equipe-cartao" id="equipe3">
+                        <h4>Mahonri Maia</h4>
+                        <img src="img/img-maho.jpg" alt="Foto do Mahonri">
+                        <p>"Mahon (Marrom)" para simplificar as coisas. É formado em Design Gráfico e um entusiasta de
+                            ilustrações e caligrafia. Tem experiência com diagramação de livros e revistas e atualmente
+                            está realizando seu sonho de adolescência de ser se tornar um desenvolvedor web.</p>
+                    </div>
+                    <div class="equipe-cartao" id="equipe2">
+                        <h4>Giovanni Marcon</h4>
+                        <img src="img/img-gio.jpg" alt="Foto do Giovanni">
+                        <p>Apaixonado por música e tecnologia desde criança, Giovanni é músico profissinal a mais de 15
+                            anos e entusiasta de tecnologia por ainda mais tempo. Após anos estudando por hobby diversas
+                            linguagens de programação agora se dedica em tempo integral para se tornar um desenvolvedor.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer>
+            <small>GMG Soluções Digitais© - 2021</small>
+        </footer>
+    </div>
+</body>
+
+</html>

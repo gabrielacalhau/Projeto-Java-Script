@@ -1,0 +1,126 @@
+#fundo-formulario {
+  width: 100%;
+  background-color: var(--cor-fundo-normal);
+}
+
+body {
+  background-color: var(--cor-fundo-claraX);
+}
+
+#meio-titulo {
+  width: var(--largura-meio);
+  max-width: var(--largura-maxima);
+  margin: auto;
+  text-align: center;
+}
+
+#meio-titulo p {
+  font-weight: 300;
+  padding-bottom: 15px;
+}
+
+h1 {
+  margin: 0;
+  padding: 30px 0 0;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+#grande {
+  background-color: var(--cor-fundo-normal);
+  min-width: 500px;
+  padding: 23px;
+  margin-top: 22px;
+  margin-left: 56px;
+  width: var(--largura-meio);
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+  border-radius: 23px 23px;
+}
+
+h3 {
+  color: var(--cor-texto-clara);
+  margin: 0;
+}
+
+#primeiraopção {
+  color: var(--cor-texto-clara);
+}
+
+#segundaopção {
+  color: var(--cor-texto-clara);
+}
+
+#botao {
+  width: 250px;
+  padding: 20px;
+}
+
+#resultado {
+  float: left;
+  margin: 7px 10px 0 0;
+}
+
+#val {
+  float: left;
+}
+
+#campos-moedas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding: 30px 0;
+}
+
+#campos-resultado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#opcao1 {
+  border-color: var(--cor-texto-escura);
+  background-color: var(--cor-fundo-claraX);
+}
+
+#opcao2 {
+  border-color: var(--cor-texto-escura);
+  background-color: var(--cor-fundo-claraX);
+}
+
+#input {
+  border-color: var(--cor-texto-escura);
+  background-color: var(--cor-fundo-claraX);
+  margin-left: 21px;
+}
+
+#btn1 {
+  font-variant: small-caps;
+  border-radius: 10px 10px;
+  background: var(--cor-acento-suave);
+  border-style: none;
+  width: 250px;
+}
+
+#btn1:hover {
+  background-color: var(--cor-acento-forte);
+  border-color: var(--cor-texto-escura);
+  color: white;
+  border: 2px;
+}
+
+#btn1:active {
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.564);
+}
+
+#div4 {
+  text-align: center;
+}
+
+#barraresultado {
+  border-color: var(--cor-texto-escura);
+  background-color: var(--cor-fundo-claraX);
+  width: 250px;
+}

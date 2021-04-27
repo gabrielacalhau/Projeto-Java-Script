@@ -1,0 +1,262 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cor-fundo-clara);
+}
+
+#quem-somos-fundo {
+  background-color: var(--cor-fundo-clara);
+  background-image: url(../img/img-inicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 20%;
+  height: calc(100vh - 80px);
+}
+
+#quem-somos {
+  color: white !important;
+  margin: auto;
+  width: var(--largura-meio);
+  max-width: var(--largura-maxima);
+  padding: 20px;
+}
+
+#quem-somos h1 {
+  width: 70%;
+}
+
+#quem-somos p {
+  font-weight: 300;
+}
+
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲  Link float  ▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
+#links-float {
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+}
+
+#links-float i {
+  text-shadow: 0px 0px 2px rgba(245, 245, 245, 0.5);
+  color: var(--cor-texto-normal);
+  font-size: 45px;
+  opacity: 0.3;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#links-float i:hover {
+  text-shadow: 0px 0px 2px rgba(245, 245, 245, 0.1);
+  color: var(--azul-500);
+  font-size: 45px;
+  opacity: 0.5;
+}
+
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲  Contato  ▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
+#contato-fundo {
+  background-color: var(--cor-fundo-clara);
+}
+
+#contato {
+  width: var(--largura-meio);
+  max-width: var(--largura-maxima);
+  margin: auto;
+  padding: 20px 40px;
+  text-align: justify;
+}
+
+#contato p {
+  font-weight: 300;
+}
+
+#contato-email {
+  text-align: center;
+  margin: 35px 0 15px;
+}
+
+#email {
+  background-color: var(--cor-fundo-escura);
+  border: none;
+  color: var(--cor-texto-clara);
+  padding: 0.5em 0.6em;
+}
+
+#contato-email button {
+  font-variant: small-caps;
+  font-weight: 400;
+  border: 2px solid var(--cor-texto-escura);
+  background: var(--cor-acento-suave);
+  color: var(--cor-texto-normal);
+  outline: none;
+  margin-left: 25px;
+  border-radius: 8px;
+  border-style: none;
+  padding: 0.5em 0.6em;
+  width: 150px;
+}
+
+#contato-email button:hover {
+  background-color: var(--cor-acento-forte);
+  border-color: var(--cor-texto-escura);
+  color: white;
+  border: 2px;
+}
+
+#contato-email button:active {
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.564);
+}
+
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼  Projetos  ▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
+.projetos {
+  display: grid;
+  width: var(--largura-meio);
+  max-width: var(--largura-maxima);
+  padding: 0px;
+  margin: auto;
+}
+
+.projetos-img {
+  background-size: cover;
+  min-height: 360px;
+  height: 100%;
+}
+
+.projetos-texto {
+  padding: 0px 0px 10px 30px;
+}
+
+#cadastro .projetos-texto {
+  padding: 0px 30px 10px 0px;
+}
+
+.projetos-texto h3 {
+  background-color: rgba(0, 0, 0, 0.315);
+  text-align: center;
+}
+
+.projetos-texto p {
+  text-align: justify;
+  font-weight: 300;
+}
+
+/* ▲▼▲▼ Botão projetos ▲▼▲▼ */
+
+.projetos-texto a {
+  display: block;
+  font-weight: 400;
+  background-color: var(--cor-acento-suave);
+  color: var(--cor-texto-normal);
+  font-variant: small-caps;
+  font-size: 1.2em;
+  text-decoration: none;
+  text-align: center;
+  border-style: none;
+  border-radius: 8px;
+  margin: 30px auto 15px;
+  padding: 10px;
+  width: 250px;
+}
+
+.projetos-texto a:hover {
+  background-color: var(--cor-acento-forte);
+  border-color: var(--cor-texto-escura);
+  border: 2px;
+}
+
+.projetos-texto a:active {
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.564);
+}
+
+/* ▲▼▲▼ Seções projetos ▲▼▲▼ */
+
+#calculadora {
+  grid-template-columns: 2fr 3fr;
+}
+
+#calculadora .projetos-img {
+  background-image: url(../img/ind-calc.png);
+}
+
+#cadastro {
+  grid-template-columns: 3fr 2fr;
+}
+
+#cadastro .projetos-img {
+  background-image: url(../img/ind-form.png);
+}
+
+#conversor {
+  grid-template-columns: 2fr 3fr;
+}
+
+#conversor .projetos-img {
+  background-image: url(../img/ind-conv.png);
+}
+
+#calculadora-fundo {
+  background-color: var(--cor-fundo-normal);
+}
+
+#cadastro-fundo {
+  background-color: var(--cor-fundo-clara);
+}
+
+#conversor-fundo {
+  background-color: var(--cor-fundo-normal);
+}
+
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼  Equipe  ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
+#equipe-fundo {
+  background-color: var(--cor-fundo-clara);
+}
+
+#equipe {
+  display: flex;
+  justify-content: space-around;
+  width: var(--largura-meio);
+  max-width: var(--largura-maxima);
+  padding: 40px 0;
+  margin: auto;
+}
+
+.equipe-cartao {
+  margin: 20px;
+  padding: 0px 15px;
+  background-color: var(--cor-fundo-normal);
+  width: 30%;
+}
+
+.equipe-cartao:hover {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.363);
+}
+
+.equipe-cartao img {
+  width: 100%;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.equipe-cartao h4 {
+  background-color: rgba(0, 0, 0, 0.315);
+  padding: 10px 0 10px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.equipe-cartao p {
+  text-align: justify;
+}

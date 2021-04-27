@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Gabriela Padilha Calhau, Giovanni Marcon, Mahonri Maia  -->
+
+<head>
+    <!--▲▼▲▼▲▼▲▼ Icone site ▲▼▲▼▲▼▲▼-->
+    <link rel="shortcut icon" href="img/gmg-mini-logo.png" type="image/x-icon" />
+
+    <!-- ▲▼▲▼▲▼▲▼ Meta tags ▲▼▲▼▲▼▲▼ -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="Author" content="Gabriela Padilha Calhau, Giovanni Marcon, Mahorni Maia">
+    <meta content="GMG Soluções - Soluções digitais personalizadas." name="description">
+    <meta name="keywords" content="GMG, GMG soluções digitais, layout, sites, sistemas web, soluções web, Web Design">
+
+    <title>GMG - Formulário</title>
+
+    <!-- ▲▼▲▼▲▼▲▼ CSS ▲▼▲▼▲▼▲▼ -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/sanitize-full.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/formulario.css'>
+
+    <!-- ▲▼▲▼▲▼▲▼ Link Fonts Awesome ▲▼▲▼▲▼▲▼ -->
+    <script src="https://kit.fontawesome.com/5cf15c459a.js" crossorigin="anonymous"></script>
+
+    <!-- ▲▼▲▼▲▼▲▼ Scripts ▲▼▲▼▲▼▲▼ -->
+    <script src="js/coresefonte.js"></script>
+    <script src="js/formulario.js"></script>
+
+</head>
+
+<body id="body" class="cores-noite">
+    <div id="tamanho-fonte" class="fonte-normal">
+        <header>
+            <div id="header-conteudo">
+
+                <a href="index.html"><img src="img/gmg-logo.png" alt="Logo marca GMG"></a>
+                <div>
+                    <div>
+                        <i onclick="trocarTema()" class="fas fa-adjust"></i>
+                        <i onclick="trocarFonte()" class="fas fa-text-height"></i>
+                    </div>
+                </div>
+        </header>
+        <main>
+            <div>
+                <div id="fundo-titulo">
+                    <div id="meio-titulo">
+                        <h1>Cadastro</h1>
+                        <P>Preencha abaixo o formulário de contato para que possamos entender melhor suas necessidades
+                            e retornar com a melhor proposta.</P>
+                    </div>
+                </div>
+                <div id="fundo-formulario">
+                    <form id="formulario" action="">
+                        <div id="box-name">
+                            <label for="nome">Nome completo: </label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo"
+                                oninput="this.value = this.value.toUpperCase()" onblur="tiraBorda(this)">
+                        </div>
+                        <div id="box-cpf">
+                            <label for="cpf">CPF: </label>
+                            <input type="text" name="cpf" id="cpf" placeholder="CPF" onblur="VerificaCPF()"
+                                onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        </div>
+                        <div id="box-data">
+                            <div id="box-data1">
+                                <label for="dia">Dia: </label>
+                                <input type="number" name="dia" id="dia" min="1" max="31" placeholder="Dia"
+                                    onblur="valDia(this), tiraBorda(this)">
+                            </div>
+                            <div id="box-data2">
+                                <label for="mes">Mês: </label>
+                                <input list="meses" type="text" name="mes" id="mes" placeholder="Mês"
+                                    onblur="tiraBorda(this)" onkeypress="return event.charCode == 255">
+                            </div>
+                            <div id="box-data3">
+                                <label for="ano">Ano: </label>
+                                <input type="number" name="ano" id="ano" min="1891" max="2021" placeholder="Ano"
+                                    onblur="valAno(this), tiraBorda(this)">
+                            </div>
+                        </div>
+                        <div id="mailbox">
+                            <label for="email">E-mail: </label>
+                            <input type="email" name="email" id="email" placeholder="E-mail"
+                                onblur="validacaoEmail(this)" oninput="this.value=this.value.toLowerCase()">
+                        </div>
+                        <div id="box-sexo">
+                            <label for="sexo">Sexo: </label>
+                            <input list="sexos" type="text" name="sexo" id="sexo" placeholder="Sexo"
+                                onblur="tiraBorda(this)">
+                        </div>
+
+                        <datalist id="meses">
+                            <option value="janeiro"></option>
+                            <option value="fevereiro"></option>
+                            <option value="março"></option>
+                            <option value="abril"></option>
+                            <option value="maio"></option>
+                            <option value="junho"></option>
+                            <option value="julho"></option>
+                            <option value="agosto"></option>
+                            <option value="setembro"></option>
+                            <option value="outubro"></option>
+                            <option value="novembro"></option>
+                            <option value="dezembro"></option>
+                        </datalist>
+
+                        <datalist id="sexos">
+                            <option value="feminino"></option>
+                            <option value="masculino"></option>
+                            <option value="não informado"></option>
+                        </datalist>
+                    </form>
+                    <div id="btt-box">
+                        <button onclick="frase()">Cadastrar</button>
+                    </div>
+                </div>
+                <div id="mensagem"></div>
+            </div>
+        </main>
+        <footer>
+            <small>GMG Soluções Digitais &copy; - 2021</small>
+        </footer>
+    </div>
+</body>
+
+</html>
